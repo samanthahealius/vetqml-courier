@@ -1,0 +1,341 @@
+h1 {
+	margin-bottom: 8px;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+i.icon {
+	width: 16px;
+	height: 16px;
+	padding: 0 8px;
+	margin: 0;
+	border: 0;
+	background-repeat: no-repeat;
+	display: inline;
+	vertical-align: top;
+}
+i.alert {
+	color: #f00;
+}
+p.urgent {
+	color: #f00;
+}
+#collect-form {
+	background-color: #F4C435;
+	border-radius: 25px 0px 0px 0px;
+	margin-top: 20px;
+    padding: 30px 50px 30px 45px;
+}
+#collect-intro {
+	text-align: center;
+}
+
+#collect-form *, .collect-form-dialog * {
+	box-sizing: border-box;
+}
+.collect-form-dialog h2 {
+	color: #666;
+}
+.collect-form-dialog p:last-child {
+	margin-bottom: 0;
+}
+#collect-form .ui-button-text-only .ui-button-text {
+	padding: 0;
+}
+/*#collect-form .ui-widget.ui-button, .collect-form-dialog .ui-widget.ui-button {
+	border: 1px solid #d3d3d3!important;
+	background: #e6e6e6 url('/Resources/Shared/components/jquery-ui-themes/1.8.16/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png') repeat-x scroll 50% 50%!important;
+	color: #555555!important;
+	-moz-border-radius-topleft: 4px!important;
+	-webkit-border-top-left-radius: 4px!important;
+	-khtml-border-top-left-radius: 4px!important;
+	border-radius: 4px!important;
+	text-shadow: none!important;
+	font-weight: normal!important;
+}
+#collect-form .ui-widget.ui-button.ui-state-hover, .collect-form-dialog .ui-widget.ui-button.ui-state-hover {
+	border: 1px solid #999999!important;
+	background: #dadada url('/Resources/Shared/components/jquery-ui-themes/1.8.16/smoothness/images/ui-bg_glass_75_dadada_1x400.png') 50% 50% repeat-x!important;
+	color: #212121!important;
+}
+
+#collect-form .form-group {
+	padding: 4px 6px;
+	clear: both;
+	line-height: 1.8;
+	min-height: 1.8em;
+} */
+#collect-form .btn .fa {
+	font-size: 1rem;
+}
+#collect-form .form-control {
+    padding-left: calc(50px / 3);
+    padding-right: calc(50px / 3);
+	font-size: 0.94rem;
+	height: 50px;
+	border: 0;
+}
+#collect-form .form-control.auto-width {
+	width: auto;
+}
+#collect-form input[type=text].form-control:required {
+	border-color: #f00;
+	background-color: #fff0f0;
+}
+#collect-form input[type=text].form-control:required:valid {
+	border-color: #ccc;
+	background-color: #fff;
+}
+#collect-form input[type=text].form-control:disabled, #collect-form fieldset[disabled] input[type=text].form-control {
+	border-color: #ccc;
+	background-color: #f0f0f0!important;
+	color: #333;
+}
+#collect-form input[type=text].form-control:required:focus {
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(233, 0, 0, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(233, 0, 0, .6);
+}
+#collect-form .form-control:focus, #collect-form input[type=text].form-control:required:valid:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(102, 175, 233, .6);
+}
+#collect-form input[type=radio]:required {
+	border-color: #f00;
+	background-color: #fff0f0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 4px #f00;
+}
+#collect-form input[type=radio]:required:valid {
+	border-color: #ccc;
+	background-color: #fff;
+	box-shadow: none;
+}
+#collect-form input[type=radio]:disabled, #collect-form fieldset[disabled] input[type=radio] {
+	border-color: #ccc;
+	background-color: #f0f0f0!important;
+}
+#collect-form .form-group .control-label {
+	width: 30%;
+	display: block;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+	margin-right: 16px;
+}
+#collect-form .form-group .control-input {
+	padding: 0;
+}
+#collect-form .form-group .control-input p.comment {
+	margin: 5px 0 0 0;
+	font-size: 95%;
+	font-style: italic;
+}
+#collect-form .form-group .input-row {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+#collect-form .form-group .input-row .input-cell {
+
+}
+#collect-form .form-group .input-row .input-cell:first-child {
+	width: 100%;
+}
+#collect-form .form-group input[type=checkbox], #collect-form .form-group input[type=radio] {
+	margin-top: 0;
+}
+
+#collect-form .input-loading {
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+#collect-form fieldset {
+	display: block;
+	border: 0;
+}
+
+#collect-form label {
+	font-family: Helvetica,Arial,sans-serif;
+	padding-top: 2px;
+	height: 28px;
+	max-height: 28px;
+}
+#collect-form select:disabled, #collect-form fieldset[disabled] select {
+	color: #6D6D6D;
+}
+#collect-form select[multiple] {
+	height: auto;
+	max-height: inherit;
+}
+#collect-form label, #collect-form input[type=checkbox], #collect-form input[type=radio], .btn {
+	cursor: pointer;
+}
+#collect-form fieldset[disabled] label {
+	cursor: default;
+}
+#collect-form fieldset[disabled] .form-control, #collect-form fieldset[disabled] .btn, #collect-form input[type=checkbox][disabled], #collect-form input[type=radio][disabled] {
+	cursor: not-allowed;
+}
+
+#collect-form .datepicker-container, #collect-form .time {
+	width: 100px;
+	min-width: 100px;
+}
+#collect-form #collect-form-pickup-location, #collect-form #collect-form-pickup-location-confirmation, #collect-form #collect-form-job, #collect-form #collect-form-actions {
+	display: none;
+}
+#collect-form-pickup-location-confirmation .checkbox > label {
+	display: inline-block;
+	padding-left: 20px;
+}
+#collect-form-pickup-location-confirmation .checkbox > label > input[type=checkbox] {
+	margin-left: -20px;
+}
+#collect-form #collect-form-pickup-location-check {
+	opacity: 1;
+	min-width: 50px;
+    background-color: #4796D9 !important;
+	background-image: none;
+	color: #fff;
+    border: none;
+	border-radius: 0 3px 3px 0;
+	height: 100%;
+}
+#collect-form .message-error {
+	clear: both;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	display: none;
+}
+#collect-form-patient-fname {
+	margin-bottom: 5px;
+}
+#collect-message {
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	display: none;
+}
+
+#collect-form .input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+#collect-form .input-group > * {
+	display: table-cell;
+}
+#collect-form .input-group .input-group-addon, .input-group .input-group-btn {
+	position: relative;
+	width: 1%;
+	font-size: 0px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+#collect-form .input-group .form-control {
+	width: 100%;
+}
+#collect-form .input-group > .form-control {
+	border-right: 0!important;
+	border-radius: 3px 0 0 3px!important;
+}
+#collect-form .input-group > .input-group-btn button, .input-group > .input-group-addon {
+	border: 1px solid rgb(211, 211, 211);
+	border-radius: 0 3px 3px 0!important;
+	margin-left: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+#collect-form-tests-list, #collect-form-speciment-locations-list {
+	column-count: 2;
+	margin-bottom: 5px;
+	clear: both;
+}
+
+#collect-form #collect-form-surgery-city, #collect-form #collect-form-surgery-postcode, #collect-form #collect-form-surgery-state {
+	width: 100%;
+}
+
+#collect-dialog-ok, #collect-dialog-error {
+	display: none;
+}
+#collect-dialog-error .message-error {
+	color: red;
+	font-weight: bold;
+}
+#collect-form #collect-form-job p.comment {
+	margin-left: 85px;
+	margin-top: 15px;
+}
+@media(max-width: 1024px) {
+	#collect-form #collect-form-pickup-location-confirmation .form-group .control-label {
+		display: none;
+	}
+}
+@media(max-width: 767px) {
+	#collect-form-tests-list, #collect-form-speciment-locations-list {
+		column-count: 1;
+	}
+	.online-courier-form #collect-intro p.urgent {
+		margin-right: 0;
+		text-align: center;
+	}
+	#collect-form {
+		padding: 30px 20px 30px 20px;
+	}
+	#collect-form #collect-form-pickup-location-search label {
+		height: auto !important;
+		max-height: 100% !important;
+		margin-bottom: 20px;
+	}
+	#collect-form #collect-form-pickup-location-check {
+		height: 50px;
+	}
+	#collect-form #collect-form-pickup-location-search .form-control {
+		margin-bottom: 20px;
+	}
+	.online-courier-form #collect-form-pickup-location .form-group .control-label {
+		height: auto !important;
+		max-height: auto !important;
+		padding: 0;
+	}
+	.online-courier-form #collect-form-pickup-location .form-group .control-label br {
+		display: none;
+	}
+	.online-courier-form #collect-form-surgery-city {
+		margin-top: -15px;
+	}
+	#collect-form #collect-form-pickup-location-confirmation .form-group .control-label, .checkbox.correct-details label span:before {
+		display: none;
+	}
+	#collect-form-pickup-location-confirmation .checkbox > label > input[type=checkbox] {
+		margin-left: -28px;
+	}
+	#collect-form #collect-form-job p.comment {
+		margin-left: 0;
+	}
+	.online-courier-form fieldset#collect-form-pickup-location {
+		margin-top: 0;
+	}
+	.online-courier-form #collect-form .form-group #collect-form-tests-list input[type=checkbox] {
+		margin-right: 10px;
+		top: 0;
+	}
+	#collect-form #collect-form-tests-list .checkbox label {
+		display: inline-flex;
+		margin-bottom: 10px;
+		height: auto;
+		max-height: auto;
+	}
+	.online-courier-form button#collect-form-submit, .online-courier-form button#collect-form-reset {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+}
