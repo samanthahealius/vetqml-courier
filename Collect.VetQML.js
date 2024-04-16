@@ -7,11 +7,13 @@ if(!Array.prototype.indexOf){
 	}
 }
 
+
 let sCollectionTypeId = 'V'; // Vet
 let sState = 'QLD';
 let sProvider = 'www.vetqml.com.au';
 var oCatalogue = null;
-var sWebAPIHost = window.location == undefined || window.location.hostname.indexOf('.com.au') !== -1 ? 'https://webapi.healius.com.au' : 'http://api'; // without trailing slash!
+// var sWebAPIHost = window.location == undefined || window.location.hostname.indexOf('.com.au') !== -1 ? 'https://webapi.healius.com.au' : 'http://api'; // without trailing slash!
+var sWebAPIHost = 'https://webapi.healius.com.au';
 var sJobURL = sWebAPIHost + '/collect/jobs/';
 var sCatalogueURL = sWebAPIHost + '/collect/catalogue/';
 var sLocationSearchURL = sWebAPIHost + '/collect/search/';
