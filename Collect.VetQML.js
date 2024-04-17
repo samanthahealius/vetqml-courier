@@ -184,7 +184,23 @@ function init(){
 			formJobReset();
 		})
 	;
+	$('#collect-search-reset').click(function(event) {
+		event.preventDefault();
 
+		$('#collect-form-pickup-location-confirm').prop( "checked", false );
+
+		$('#collect-form-pickup-location-check').button('option', 'disabled', false)
+		$('#collect-form-submit').button('option', 'disabled', true);
+		$('#collect-form-pickup-location, #collect-form-pickup-location-search').prop('disabled', false);
+		$('#collect-form-job').prop('disabled', true).hide('fade');
+		$('#collect-form-actions').prop('disabled', true).hide('fade');
+
+		$('#collect-form-pickup-location, #collect-form-pickup-location-confirmation, #collect-form-job, #collect-form-actions').hide();
+		$('#collect-form-code').val('').focus();
+
+		enabledDisablePickupLocationCheckButton();
+	});
+	
 	enabledDisablePickupLocationCheckButton();
 
 	initialized = true;
